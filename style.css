@@ -1,0 +1,446 @@
+/* Styles pour le header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+nav ul li {
+
+    padding: 10px; /* Ajouter un rembourrage intérieur pour l'espace autour du texte */
+    margin-bottom: 5px; /* Ajouter un espace entre chaque élément */
+    border-radius: 5px; /* Arrondir les coins des cases */
+}
+nav ul li {
+    margin: 20px 0; /* Réduire l'espace entre les cases de la barre de navigation */
+}
+
+
+
+/* Styles pour le sous-menu */
+.sous-menu {
+    display: none; /* Par défaut, le sous-menu est caché */
+    position: absolute;
+    z-index: 1;
+    background-color: #fff; /* Fond gris foncé pour le sous-menu */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Ombre */
+    padding: 0; /* Supprimer le rembourrage par défaut */
+    border-radius: 5px; /* Ajout de coins arrondis */
+    background-color: #333; /* Fond en gris foncé */
+    z-index: 999; /* Valeur élevée pour que le sous-menu soit au-dessus des autres éléments */
+    width: 125px; /* Définir une largeur spécifique */
+    margin-top: 5px; /* Déplacer la liste vers le bas de 5 pixels */
+}
+
+
+
+.sous-menu li {
+    display: block;
+    padding: 8px; /* Espacement intérieur */
+}
+
+.sous-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff; /* Couleur du texte */
+}
+/* Styles pour les éléments de la liste déroulante */
+.sous-menu li {
+    margin: 10px 0; /* Réduire l'espace entre chaque élément en ajustant la marge */
+    /* Autres styles... */
+}
+
+.sous-menu li a:hover {
+    background-color: #333;; /* Couleur de fond au survol */
+    transform: scale(1.1); /* Agrandir l'élément de 10% */
+}
+
+
+
+/* Styles pour le sous-menu numéro 2 */
+#sous-menu-voitures {
+    background-color: #333; /* Fond en gris foncé */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Légère ombre */
+}
+
+#sous-menu-voitures li {
+    list-style: none;
+    padding: 5px 5px; /* Espacement intérieur */
+}
+
+#sous-menu-voitures li a {
+    color: #fff; /* Couleur du texte en blanc */
+}
+
+#sous-menu-voitures li a:hover {
+    background-color: #555;; /* Couleur de fond au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour le body */
+body {
+    font-family: Futura PT Demi, sans-serif;
+}
+
+
+h1 {
+    font-size: 36px; /* Taille de la police plus grande */
+    font-weight: bold; /* Gras */
+    font-style: italic; /* Ajouter l'italique */
+}
+h1 {
+    height: 70px; /* Définir la hauteur de la barre de navigation */
+    margin-left: 20px;
+}
+
+
+
+
+nav {
+    margin-bottom: 10px; /* Réduire la marge en bas de la barre de navigation à 10 pixels */
+}
+
+nav {
+    height: 55px; /* Définir la hauteur de la barre de navigation */
+}
+
+
+
+
+nav ul li a {
+    font-size: 18px; /* Ajuster la taille de la police des liens de navigation à 18 pixels */
+}
+
+
+nav ul li a {
+    transition: color 0.3s ease; /* Transition de couleur de 0.3 secondes avec une accélération douce */
+}
+nav ul li a:hover {
+    color: #d9a57a; /* Couleur du texte au survol */
+}
+
+
+
+
+
+
+
+
+/* Styles pour les images */
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+#hero {
+    color: white; /* Couleur du texte */
+    text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.5); /* Ombre portée */
+}
+
+#hero {
+    margin-top: -40px; /* Déplacer l'image vers le haut de 20 pixels */
+}
+
+
+/* Styles pour la section hero */
+#hero {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-overlay h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* Styles pour la section vehicles */
+#vehicles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vehicle {
+    position: relative;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vehicle img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.vehicle h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.vehicle p {
+    margin-bottom: 10px;
+}
+
+.vehicle .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Modifier pour rendre les coins arrondis */
+    transition: all 0.3s;
+}
+
+.vehicle .button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.vehicle .button:active {
+    transform: scale(0.9);
+}
+
+
+
+.vehicle p {
+    margin-bottom: 45px; /* Ajouter une marge inférieure de 20px */
+}
+
+
+
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px; /* Placer le texte en bas */
+    right: 10px; /* Placer le texte à droite */
+    text-align: right; /* Aligner le texte à droite */
+}
+
+.overlay h3 {
+    font-family: "Davis Sans", sans-serif;
+    font-weight: bold;
+    font-size: 50px; /* Taille du texte à 50 pixels */
+    background: linear-gradient(to bottom, #000000, #ffffff); /* Dégradé de couleur du haut vers le bas (noir à blanc) */
+    -webkit-background-clip: text; /* Permettre le clip du texte */
+    color: transparent; /* Rendre le texte transparent */
+    text-shadow: 0,8px 0,8px 0,8px rgba(0, 0, 0, 0.5); /* Ajouter une ombre légère */
+}
+
+
+.overlay .button {
+    font-family: "Davis Sans", sans-serif; /* Police Davis Sans */
+    font-weight: bold; /* Gras */
+    border: 2px solid #333; /* Bordure de 2 pixels solide de couleur gris anthracite */
+    border-radius: 5px; /* Coins arrondis de 5 pixels */
+    background-color: transparent; /* Fond transparent */
+    color: #333; /* Couleur du texte gris anthracite */
+    padding: 10px 20px; /* Rembourrage intérieur */
+    text-decoration: none; /* Supprimer la décoration de texte par défaut */
+    transition: all 0.3s; /* Transition fluide */
+}
+
+.overlay .button:hover {
+    background-color: #333; /* Changement de couleur de fond au survol */
+    color: #fff; /* Changement de couleur du texte au survol */
+}
+
+
+
+
+
+
+.car-info {
+    list-style-type: none; /* Supprimer les puces */
+    padding-left: 0; /* Supprimer le rembourrage à gauche */
+    margin-top: 0; /* Supprimer la marge supérieure */
+    margin-bottom: 10px; /* Ajouter une petite marge inférieure */
+}
+
+.car-info li {
+    margin-left: 0; /* Supprimer la marge à gauche des éléments de la liste */
+    margin-bottom: 5px; /* Ajouter un espacement entre les éléments de la liste */
+}
+
+.vehicle p {
+    margin-bottom: 15px; /* Ajouter de l'espace entre le paragraphe et la liste */
+    font-weight: bold; /* Mettre le texte en gras */
+    font-style: italic; /* Mettre le texte en italique */
+}
+
+.vehicle .button {
+    margin-top: 10px; /* Ajouter un espace au-dessus du bouton */
+}
+
+
+
+
+
+
+#gallery {
+    display: flex; /* Utiliser Flexbox */
+    flex-wrap: wrap; /* Permettre le passage à la ligne si nécessaire */
+}
+
+.gallery-item {
+    flex: 0 0 25%; /* Chaque image occupe 25% de la largeur du conteneur */
+}
+
+.gallery-item img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+.gallery-item img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    height: 100%; /* Hauteur de l'image à 100% du conteneur */
+    object-fit: cover; /* Redimensionne l'image pour qu'elle couvre toute la zone tout en conservant ses proportions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-container h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-container input[type="email"],
+.newsletter-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-container input[type="email"] {
+    width: 70%;
+}
+
+.newsletter-container button {
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter-container button {
+    margin-top: 15px; /
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.newsletter-container button:hover {
+    transform: scale(1.07); 
+}
+
+
+
+
+
+footer {
+   
+    padding: 20px;
+    text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.social-icons a {
+    display: inline-block; /* Afficher les boutons en ligne */
+    margin: 0 10px; /* Espacement entre les boutons */
+}
+
+.social-icons img {
+    width: 40px; /* Taille des logos */
+    height: 40px;
+}
+
+footer {
+    color: #555; /* Couleur du texte blanc */
+    text-align: center; /* Centrer le contenu 
